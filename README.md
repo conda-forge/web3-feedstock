@@ -5,11 +5,9 @@ Home: https://github.com/ethereum/web3.py
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/web3-feedstock/blob/master/LICENSE.txt)
 
 Summary: Web3.py
-
-
 
 Current build status
 ====================
