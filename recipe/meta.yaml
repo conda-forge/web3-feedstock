@@ -10,7 +10,7 @@ source:
   sha256: 94b3e6dc1ce7e921322ffa188960c6853f276060b0741a738fe7ba407b4cf063
 
 build:
-  number: 0
+  number: 1
   # skip due to hypothesis < 4 not playing nice with pytest https://github.com/ethereum/eth-abi/issues/143 and https://github.com/HypothesisWorks/hypothesis/issues/1943
   skip: true  # [py==38]
   script: {{ PYTHON }} -m pip install . -vv
