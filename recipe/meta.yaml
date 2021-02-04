@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "5.14.0" %}
+{% set version = "5.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1ea03d1b4f3e1df81e0cf93fb6153a018d08021cea5cc5133df8c008f15b62ae
+  sha256: ea965b08fc83078b7fd578d5ce1c7cc8c7df6e1d85c097553fb45ac166b1a74e
 
 build:
-  number: 1
+  number: 0
   # skip due to hypothesis < 4 not playing nice with pytest https://github.com/ethereum/eth-abi/issues/143 and https://github.com/HypothesisWorks/hypothesis/issues/1943
   skip: false
   script: {{ PYTHON }} -m pip install . -vv
