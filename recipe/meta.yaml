@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "5.18.0" %}
+{% set version = "5.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d86763816392bf4b0b351ca0039135aabea6b061645280ecc1503130128e845b
+  sha256: e120decb8e1db6d7d005a4446756f16b605e0a3d78384587fd2dab6338654751
 
 build:
   number: 0
