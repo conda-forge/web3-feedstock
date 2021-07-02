@@ -34,7 +34,7 @@ requirements:
     - pywin32 >=223  # [win]
     - requests >=2.16.0,<3.0.0
     - typing-extensions >=3.7.4.1,<4  # [py<38]
-    - websockets >=8.1.0,<9.0.0
+    - websockets >=9.1.0,<10
     - aiohttp >=3.7.4.post0,<4
 
 test:
