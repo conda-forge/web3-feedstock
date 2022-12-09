@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/web3-feedstock/
 
 Summary: Web3.py
 
+Documentation: https://web3py.readthedocs.io
+
 Current build status
 ====================
 
@@ -267,5 +269,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@mfansler](https://github.com/mfansler/)
 * [@step21](https://github.com/step21/)
 
