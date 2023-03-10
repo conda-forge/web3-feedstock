@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "5.31.0" %}
+{% set version = "5.31.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ef0ad5c62958fe18202bacfa1f216a57d97a8abdecc68f87946c02b38aaab34e
+  sha256: 4b2d420647c81856e3cf398996cd3cc80c719dc3a10881884c5c3b1467e4f850
 
 build:
   number: 0
@@ -37,7 +37,7 @@ requirements:
     - requests >=2.16.0,<3.0.0
     - typing-extensions >=3.7.4.1,<5  # [py<38]
     - websockets >=9.1.0,<10
-    
+
 
 test:
   imports:
