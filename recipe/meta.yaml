@@ -35,7 +35,8 @@ requirements:
     - pywin32 >=223  # [win]
     - requests >=2.16.0,<3.0.0
     - typing-extensions >=3.7.4.1,<5  # [py<38]
-    - websockets >=9.1.0,<10
+    - websockets >=9.1.0,<10  # [py!=310]
+    - websockets >=10,<11  # [py==310]
 
 test:
   imports:
