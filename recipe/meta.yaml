@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - aiohttp >=3.7.4.post0,<4
-    - eth-abi >=2.0.0b6,<3.0.0
+    - eth-abi >=2.2.0,<3.0.0
     - eth-account >=0.5.9,<0.6.0
     - eth-hash[pycryptodome] >=0.2.0,<1.0.0
     - eth-rlp <0.3
@@ -36,7 +36,6 @@ requirements:
     - requests >=2.16.0,<3.0.0
     - typing-extensions >=3.7.4.1,<5  # [py<38]
     - websockets >=9.1.0,<10
-
 
 test:
   imports:
