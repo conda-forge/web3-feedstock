@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "5.31.1" %}
+{% set version = "5.31.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 74732fbd4b2e2baff9d0ac61f268b3e7b25b09ca6572d619390a9d782c2289f2
+  sha256: f763d339dd63f922920c8a53cb46e8ee47d9ea7efaba9b8cf006956661d874d0
 
 build:
   number: 0
-  skip: true  # [py==310]
+  skip: false
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - aiohttp >=3.7.4.post0,<4
-    - eth-abi >=2.0.0b6,<3.0.0
+    - eth-abi >=2.2.0,<3.0.0
     - eth-account >=0.5.9,<0.6.0
     - eth-hash[pycryptodome] >=0.2.0,<1.0.0
     - eth-rlp <0.3
@@ -35,8 +35,8 @@ requirements:
     - pywin32 >=223  # [win]
     - requests >=2.16.0,<3.0.0
     - typing-extensions >=3.7.4.1,<5  # [py<38]
-    - websockets >=9.1.0,<10
-
+    - websockets >=9.1.0,<10  # [py!=310]
+    - websockets >=9.1.0,<11  # [py==310]
 
 test:
   imports:
