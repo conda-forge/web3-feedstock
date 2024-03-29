@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "6.15.1" %}
+{% set version = "6.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f9e7eefc1b3c3d194868a4ef9583b625c18ea3f31a48ebe143183db74898f381
+  sha256: b10c93476c106acc44b8428e47c61c385b7d0885e82cdc24049d27f521833552
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - protobuf >=4.21.6
     - pywin32 >=223  # [win]
     - requests >=2.16.0
-    - typing-extensions >=4.0.1  # [py<38]
+    - typing-extensions >=4.0.1
     - websockets >=10.0.0
     - pyunormalize >=15.0.0
 
