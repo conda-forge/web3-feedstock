@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "6.18.0" %}
+{% set version = "6.19.0" %}
 
 package:
   name: {{ name|lower }}
