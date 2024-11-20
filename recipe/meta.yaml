@@ -44,7 +44,6 @@ test:
   imports:
     - web3
     - ens
-    - ethpm
 
 about:
   home: https://github.com/ethereum/web3.py
