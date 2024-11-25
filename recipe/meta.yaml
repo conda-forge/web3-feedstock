@@ -1,5 +1,5 @@
 {% set name = "web3" %}
-{% set version = "7.0.0" %}
+{% set version = "7.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a1afc7f98c1d1fc899e61549c74ef5bc3d7b03f33be66e6a4a4378342cb049de
+  sha256: 9d4dd41deb47fee7610db542cf79b314826b25d2b1768feaca5a486b4f719d47
 
 build:
   number: 0
@@ -24,13 +24,13 @@ requirements:
     - setuptools
   run:
     - python
-    - aiohttp >=3.7.4.post0
     - eth-abi >=5.0.1
     - eth-account >=0.13.1
     - eth-hash[pycryptodome] >=0.5.1
     - eth-typing >=5.0.0
     - eth-utils >=5.0.0
     - hexbytes >=1.2.0
+    - aiohttp >=3.7.4.post0
     - pydantic >=2.4.0
     - pywin32 >=223  # [win]
     - requests >=2.23.0
