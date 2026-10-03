@@ -1,13 +1,13 @@
 {% set name = "web3" %}
-{% set version = "7.16.0" %}
+{% set version = "8.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4a75a3fa94fef4d23d502eb3c2244146ef9a1ee0082cf1cb0a91586ba0510c3
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8d898fe1909037d6269c998d27c1806ce201cf6d7e49514ad6f3e4dcc64e6e9a
 
 build:
   number: 0
@@ -24,20 +24,19 @@ requirements:
     - setuptools
   run:
     - python
-    - eth-abi >=5.0.1
-    - eth-account >=0.13.6
+    - aiohttp >=3.7.4.post0
+    - eth-abi >=6.0.0
+    - eth-account >=0.14.0
     - eth-hash[pycryptodome] >=0.5.1
     - eth-typing >=5.0.0
-    - eth-utils >=5.0.0
-    - hexbytes >=1.2.0
-    - aiohttp >=3.7.4.post0
+    - eth-utils >=5.3.0
+    - hexbytes >=2.0.0
     - pydantic >=2.4.0
+    - pyunormalize >=15.0.0
     - pywin32 >=223  # [win]
     - requests >=2.23.0
-    - typing-extensions >=4.0.1
-    - types-requests >=2.0.0
-    - websockets >=10.0.0,<16.0.0
-    - pyunormalize >=15.0.0
+    - typing-extensions >=4.0.1  # [ python_version < 3.11 ]
+    - websockets >=14.0.0
 
 test:
   imports:
